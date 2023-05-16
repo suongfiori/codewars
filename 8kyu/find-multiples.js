@@ -18,5 +18,15 @@ function findMultiples(integer, limit) {
      }
      return multiples;
    }
+
+// alternative solution using for loop
+
+   function findMultiples(integer, limit) {
+    const multiples = [];
+    for (let i = integer; i <= limit; i += integer) {
+      multiples.push(i);
+    }
+    return multiples;
+  }
    
 
