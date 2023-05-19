@@ -16,9 +16,9 @@ function persistence(num) {
         // Convert the number to a string and check if it has more than one digit
         // If it does, continue the loop; otherwise, exit the loop
 
-        num = Array.from(String(num), digit => Number(digit))
+        num = Array.from(String(num), digit => Number(digit)) // Convert the number to an array of its digits
         .reduce((a, b) => a*b, 1) //initializing the accumulator to 1 for the multiplication operation to correctly calculate
-        // Convert the number to an array of its digits
+        
         // Multiply all the digits together using the reduce() method,
         // starting with an initial accumulator value of 1
         // Update the num variable with the product of the digits
