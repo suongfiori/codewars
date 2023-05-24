@@ -13,11 +13,15 @@ Examples
 // Solution
 
   function toCamelCase(str) {
+    // Split the string into an array of words using dashes or underscores as delimiters
     const words = str.split(/[-_]/);
-  
+
+  // Map over the words array and convert each word to camel case
     return words.map(function(word, index) {
+         // For the first word, leave it unchanged
+         // Capitalize the first letter and convert the rest to lowercase
        return index === 0 ? word : word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
-    }).join("");
+    }).join(""); // Join the words back together without any separator
   }
 
   
