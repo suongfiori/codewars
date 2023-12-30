@@ -1,1 +1,1 @@
-My collection of # codewars solutions
+My solutions for #codewars challenges
